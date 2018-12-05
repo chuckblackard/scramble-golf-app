@@ -1,0 +1,39 @@
+﻿Documentation of Code for Scramble App
+ 
+1)      Index Page
+a)       Login form to login into the application
+2)      Authenticate
+a)       Authentication page to authenticate the login credentials from the index page
+3)      Menu
+a)       HTML page that has links to each feature
+4)      Select Feature
+a)       PHP file that selects dogfight scores and username for the Golfer
+5)      Insert Feature
+a)       Form to insert a new Golfer
+6)      Do Insert
+a)       PHP file that add the golfer from the Insert.php into the database
+7)      Delete Feature
+a)       Form that allows the user to insert the Username of the Golfer that they want to delete
+8)      Do Delete
+a)       PHP file that takes the Username entered in Delete.php and deletes the Golfer from the database
+9)      Update Feature
+a)       Form that allows the user to enter the username of the Golfer that they want to update
+10)   Display for Update
+a)       Form that is shown after update.php
+b)      It allows the user to update the dogfight score of the Golfer that they entered from 
+
+
+Update.php
+11)   Do Update
+a)       PHP file that updates the dogfight score that the user had entered from 
+
+
+Display_for_update.php
+12)   Create_Teams Feature
+a)       This was designed so that whenever you clicked add player, it would add the Golfer with the highest dogfight score to that team
+b)      This page is not working correctly
+13)   Temp_Teams
+a)       This was designed so that we could show an idea of what it was supposed to look like assuming that we got the algorithm working
+14)   Add Player
+a)       PHP file that was supposed to take the two highest scores of each Golfer and assign them to a team
+b)      This is currently not working
