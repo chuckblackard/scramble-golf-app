@@ -1,0 +1,46 @@
+create database scramble_db;
+use scramble_db;
+
+create table administrators ( 
+ID int not null primary key auto_increment, 
+user varchar(30), 
+password varchar(15));
+
+/* Credentials for login */
+insert into administrators (user, password) values ('dpace', 'dp1'); 
+
+/* Table for golfers and their dogfight score, algorithm sorts by the dogfight score */
+create table Golfer ( 
+GolferID int not null primary key auto_increment, 
+Uname varchar(30), 
+Dogfight int(36));
+
+
+/* Admin will select golfers from this table */
+insert into Golfer 
+(Uname, Dogfight) 
+values
+('dpace', 15), ('cblackard', 17), 
+('ltall', 21), ('bthompson', 21),
+('bcumbie', 23), ('lcarden', 19), 
+('jcarter', 20), ('dbarrett', 17), 
+('saldawsari', 16), ('mfoster', 22), 
+('jhenderson', 21), ('thogan', 23), 
+('thollingsworth', 20), ('dmathhews', 18), 
+('cmcallister',17), ('jmorgan', 22), 
+('mpatel', 26),('wwallace', 19), 
+('Rickie', 20), ('kbryant', 28);
+
+
+/* Each column is a team number so that when the teams are generated they are inserted into each column so that the golfers in each team will display back, 
+and the admin will be able to view the teams until the button is clicked again */
+/*This would also require a drop table Teams statement and the below statement to be executed everytime for when the button is clicked */
+create table Teams (
+Team_1 varchar(30), 
+Team_2 varchar(30), 
+Team_3 varchar(30), 
+Team_4 varchar(30), 
+Team_5 varchar(30));
+
+
+
